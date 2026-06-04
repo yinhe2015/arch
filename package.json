@@ -1,31 +1,37 @@
 {
   "name": "arch",
-  "description": "Better `os.arch()` for node and the browser -- detect OS architecture",
-  "version": "3.0.0",
+  "description": "一款比 Node.js 内置 os.arch() 更优秀的跨平台架构检测库，不兼容浏览器环境 —— 用于精准识别操作系统 CPU 架构，并修复若干系统识别问题。",
+  "version": "1.0.1",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
     "url": "https://feross.org"
   },
-  "browser": "browser.js",
+  "contributors": [
+    {
+      "name": "Feross Aboukhadijeh",
+      "url": "https://feross.org"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "yinhe2015",
+      "url": "https://yinhe2015.github.io"
+    }
+  ],
   "types": "./index.d.ts",
   "bugs": {
-    "url": "https://github.com/feross/arch/issues"
+    "url": "https://github.com/yinhe2015/arch/issues"
   },
   "devDependencies": {
     "airtap": "^3.0.0",
     "standard": "*",
     "tape": "^5.0.0"
   },
-  "homepage": "https://github.com/feross/arch",
+  "homepage": "https://github.com/yinhe2015/arch",
   "keywords": [
-    "browser",
-    "browserify",
     "arch",
-    "cpu info",
-    "cpus",
     "architecture",
-    "navigator.platform",
     "x64",
     "x86",
     "64 bit",
@@ -35,26 +41,15 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feross/arch.git"
+    "url": "git://github.com/yinhe2015/arch.git"
   },
   "scripts": {
-    "test": "standard && npm run test-node && npm run test-browser",
-    "test-browser": "airtap --concurrency 1 -- test/*.js",
-    "test-browser-local": "airtap --preset local -- test/*.js",
-    "test-node": "tape test/*.js"
+    "test": "tape test/*.js"
   },
   "funding": [
     {
       "type": "github",
-      "url": "https://github.com/sponsors/feross"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/feross"
-    },
-    {
-      "type": "consulting",
-      "url": "https://feross.org/support"
+      "url": "https://github.com/sponsors/yinhe2015"
     }
   ]
 }
