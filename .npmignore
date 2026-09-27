@@ -1,0 +1,10 @@
+test/
+
+.idea
+.vscode/
+.env
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+Desktop.ini

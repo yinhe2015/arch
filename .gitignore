@@ -1,0 +1,9 @@
+.idea
+.vscode/
+.env
+node_modules/
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+Desktop.ini
